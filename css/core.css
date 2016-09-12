@@ -1,0 +1,145 @@
+body {
+    height:100%;
+    width:100%;
+    background-color: rgba(255,248,240, 0.2);
+}
+form {
+    display:block;
+}
+sup {
+    font-size: 44%;
+    top:-1em;
+}
+
+#good, #bad {
+    font-family:'AvenirNext-Regular', 'Avenir Next';
+    font-size:20px;
+    text-align: center
+}
+
+.stage div li {
+    list-style: none;
+    padding-top: 25%;
+}
+
+#daybar {
+    text-align: center;
+    padding-left: 0px;
+}
+
+.days-bar {
+    background: #4169e1;
+    padding: 0 !important;
+}
+#daybar li {
+    display: inline-block;
+    color: #fff;
+    font-size:3rem;
+    width: 20%;
+}
+
+#month {
+    /*font-size: 3rem;*/
+    float: left;
+}
+
+.smileys {
+    display: inline;
+    padding:0px !important;
+}
+
+.smileys a {
+    color: black;
+}
+.smiley-box {
+    text-align: center;
+    width: 50%;
+    float:left;
+    height:100%;
+}
+
+.smiley-box:hover {
+    cursor: pointer;
+    background-color: rgba(65,105,225, 0.1);
+}
+
+.goody {
+    position: absolute;
+    /*left: 50%;*/
+    /*transition: left 0.5s;*/
+    background-color: rgba(23,29,34, 0.9);
+    color: #fff;
+    width:50%;
+}
+
+.baddy {
+    position: absolute;
+    /*left: 0px;*/
+    /*transition: left 0.5s;*/
+    width:50%
+}
+
+.header-bar i.fa {
+    transform: scale(4);
+    margin: 5% 10% 0 10%;
+}
+
+.content-container {
+    margin-top: 25%;
+}
+
+.ref {
+    background:green;
+    border-radius:4px;
+}
+
+.refClick {
+    margin:auto;
+    margin-bottom: 20px;
+    height:80px;
+    width:150px;
+}
+
+.refClick a {
+    margin: auto;
+}
+
+a span.glyphicon {
+    font-size:3em;
+    top:25%;
+    bottom:0;
+    left:35%;
+    right:0;
+}
+
+.navbar {
+    width: 29%;
+    float: right;
+    right: 12%;
+    margin-bottom: none;
+
+    min-height: 0px;
+}
+
+.btn {
+    padding: none;
+    text-align: inherit;
+}
+
+.brand {
+    border-right: 1.5px solid black;
+    padding-right: 2%;
+    margin-left: 2%;
+}
+
+.brand:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.navbar-inner .container .brand:nth-child(2) {
+    margin-left: 0%;
+    border-left: 1.5px solid black;
+    padding-left: 2%
+}

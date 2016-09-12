@@ -1,0 +1,33 @@
+{
+  "name": "shewhat",
+  "version": "1.0.0",
+  "description": "good and bad",
+  "main": "index.js",
+  "scripts": {
+    "test": "testes",
+    "start": "node server.js"
+  },
+  "author": "Eug",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.13",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/econn9/shewhat.git"
+  },
+  "keywords": [
+    "noteworthy",
+    "stuff",
+    "women",
+    "did"
+  ],
+  "bugs": {
+    "url": "https://github.com/econn9/shewhat/issues"
+  },
+  "homepage": "https://github.com/econn9/shewhat#readme"
+}
