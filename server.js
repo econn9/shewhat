@@ -100,7 +100,7 @@
         });
     });
 
-    app.listen(process.env.port || 9000, function(){
+    app.listen(process.env.PORT || 9000, function(){
         let time = new Date();
         console.log('we up on 80 ma nigga', time);
     });
