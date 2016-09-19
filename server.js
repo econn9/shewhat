@@ -9,7 +9,7 @@
 
     let app = express();
 
-    mongoose.connect(MONGO_URI);
+    mongoose.connect(MONGODB_URI);
 
     let today = mongoose.model('today', {
         year: Number,
