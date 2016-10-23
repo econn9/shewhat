@@ -9,14 +9,15 @@
 
     let app = express();
 
-    mongoose.connect('mongodb://econn9:gamehendge9@ds033056.mlab.com:33056/shewhatdb');
+    mongoose.connect('mongodb://localhost/goodbad');
 
     let today = mongoose.model('today', {
-        year: Number,
         good: String,
         goodLink: String,
+        goodYear: Number,
         bad: String,
         badLink: String,
+        badYear: Number,
         day: Number,
         month: Number
     });
@@ -65,8 +66,10 @@
             day: request.body.day,
             good: request.body.good,
             goodLink: request.body.goodLink,
+            goodYear: request.body.goodYear,
             bad: request.body.bad,
-            badLink: request.body.badLink
+            badLink: request.body.badLink,
+            badYear: request.body.badYear
         });
 
         insert.save(function(err, event) {
@@ -100,7 +103,7 @@
         });
     });
 
-    app.listen(process.env.PORT || 9000, function(){
+    app.listen(9000, function(){
         let time = new Date();
         console.log('we up on 80 ma nigga', time);
     });
