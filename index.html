@@ -11,6 +11,13 @@
 
     <script src="js/list.js"></script>
     <script src="js/submit.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/dao.js"></script>
+
+
+
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "0985f05d-3e8b-4fc4-b5ca-114efd6fef89", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 </head>
 
@@ -18,7 +25,7 @@
     <div class="shabang">
 
 
-        <div class="header-bar top-bar" style="border:1px solid blue;">
+        <div class="header-bar top-bar">
             <span id="month"></span>
 
             <div class="navbar">
@@ -39,13 +46,14 @@
                 <!-- /navbar-inner -->
             </div>
         </div>
-        <div class="header-bar days-bar" style="border: 1px solid red;">
+        <div class="header-bar days-bar">
             <!-- <img class="circ" src="http://d2t44wh9rnwl5y.cloudfront.net/gsc/LXNU3T/39/aa/6b/39aa6bbffc644f449a6a287aa88461ca/images/date_clicker/u31.png?token=c1b8351d3141feb148667f13bd277106" alt=""> -->
 
             <ol id="daybar"></ol>
         </div>
 
-        <div class="header-bar smileys" style="border:1px solid green;">
+        <div class="header-bar smileys">
+            <div><h5>Choose a feel.</h5></div>
             <a href="#" class="happy emoji">
                 <div class="smiley-box">
                     <i class="fa fa-smile-o" aria-hidden="true"></i>
@@ -63,14 +71,33 @@
 
         <div class="stage">
 
-            <div class="col-6 baddy slide" id="bad" style="border:1px solid yellow;">
+            <div class="col-6 baddy slide" id="bad">
+                <h2 id="badYearheader"></h2>
+
+                <div class="social-bad">
+                    <span class='st_facebook_large' displayText='Facebook'></span>
+                    <span class='st_twitter_large' displayText='Tweet'></span>
+                    <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                    <span class='st_reddit_large' displayText='Reddit'></span>
+                    <span class='st_pinterest_large' displayText='Pinterest'></span>
+                    <span class='st_fblike_large' displayText='Facebook Like'></span>
+                </div>
+            </div>
+            <div id="good-curtain" class="good-curtain">
 
             </div>
-            <div id="good-curtain" class="good-curtain"></div>
 
 
-            <div class="col-6 goody slide" id="good" style="border:1px solid red;">
-
+            <div class="col-6 goody slide" id="good">
+                <h2 id="goodYearheader"></h2>
+                <div class="social-good">
+                    <span class='st_facebook_large' displayText='Facebook'></span>
+                    <span class='st_twitter_large' displayText='Tweet'></span>
+                    <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                    <span class='st_reddit_large' displayText='Reddit'></span>
+                    <span class='st_pinterest_large' displayText='Pinterest'></span>
+                    <span class='st_fblike_large' displayText='Facebook Like'></span>
+                </div>
             </div>
             <div id="bad-curtain" class="bad-curtain"></div>
 
@@ -79,6 +106,7 @@
 
 
     </div>
+
 </body>
 
 </html>

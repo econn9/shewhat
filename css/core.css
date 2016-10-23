@@ -25,18 +25,40 @@ sup {
 #daybar {
     text-align: center;
     padding-left: 0px;
+    height:100%;
 }
 
 .days-bar {
-    background: #4169e1;
+    background: #fff;
     padding: 0 !important;
+    border-top: 3px solid #333333;
+    border-bottom: 1px solid #333333;
 }
 #daybar li {
     display: inline-block;
-    color: #fff;
+    color: #333333;
     font-size:3rem;
-    width: 20%;
+    width: 11%;
+    padding-top: 18px;
+    height:inherit;
 }
+
+#daybar li:hover {
+    background-color: #333333;
+    color: #fff;
+}
+
+#daybar li:nth-child(4) {
+    color: #fff;
+}
+
+#daybar li:hover:nth-child(4) {
+    background-color: currentColor;
+    color: #fff;
+}
+
+
+
 
 #month {
     /*font-size: 3rem;*/
@@ -46,6 +68,14 @@ sup {
 .smileys {
     display: inline;
     padding:0px !important;
+}
+
+.smileys h5 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 25px 0 0 0;
+    text-align: center;
 }
 
 .smileys a {
@@ -142,4 +172,16 @@ a span.glyphicon {
     margin-left: 0%;
     border-left: 1.5px solid black;
     padding-left: 2%
+}
+
+.social-good {
+    position: fixed;
+    bottom: 0;
+    left: 12.5%;
+}
+
+.social-bad {
+    position: fixed;
+    bottom: 0;
+    left: 62.5%;
 }
