@@ -9,7 +9,7 @@
 
     let app = express();
 
-    mongoose.connect('mongodb://localhost/goodbad');
+    mongoose.connect('mongodb://econn9:gamehendge9@ds033056.mlab.com:33056/shewhatdb');
 
     let today = mongoose.model('today', {
         good: String,
