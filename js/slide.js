@@ -42,6 +42,10 @@
                 bad.animate({opacity: '0'}, { queue: false });
                 goodState = !goodState;
                 badState = false;
+                setTimeout(function() {
+                    gCurt.remove();
+                    bCurt.remove();
+                }, 0);
             } else {
                 good.animate({left: '50%'}, { duration: 1, queue: false });
                 bad.animate({left: '50%'}, { duration: 2, queue: false });

@@ -7,10 +7,13 @@
             url: '/api/event/' + 1111 + '/' + 2222,
             success: function(data) {
                 data.forEach(function(event) {
-                    $('#bad').append('<h3>' + event.badYear + '</h3>');
-                    $('#good').append('<h3>' + event.goodYear + '</h3>');
+                    $('#bad').append('<h2>' + event.badYear + '</h2>');
+                    $('#good').append('<h2>' + event.goodYear + '</h2>');
                     $('#good').append('<li>' + event.good + '</li>');
                     $('#bad').append('<li>' + event.bad + '</li>');
+                    // $('#bad').append('<li>' + event.badLink + '</li>');
+                    $('#good').append('<a target="_blank" href="' + event.goodLink + '" >Full Story >></a>');
+                    $('#bad').append('<a target="_blank" href="' + event.badLink + '" >Full Story >></a>');
 
                 })
             }
