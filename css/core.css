@@ -24,9 +24,8 @@ sup {
 
 .stage div li {
     list-style: none;
-    /*padding-top: 25%;*/
-    margin: 0rem 4rem 4rem 4rem;
-    padding: 6rem 23rem 10rem 10rem;
+    margin: 0rem 4rem 0rem 4rem;
+    padding: 6rem 23rem 5rem 10rem;
     font-size:2rem;
 }
 
