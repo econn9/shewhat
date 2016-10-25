@@ -42,21 +42,21 @@
                 bad.animate({opacity: '0'}, { queue: false });
                 goodState = !goodState;
                 badState = false;
-                setTimeout(function() {
-                    gCurt.remove();
-                    bCurt.remove();
-                }, 0);
             } else {
+                bCurt.animate({opacity: '0'}, {duation:1000, queue: true});
+                gCurt.animate({opacity: '0'}, {duation:1000, queue: false});
                 good.animate({left: '50%'}, { duration: 1, queue: false });
                 bad.animate({left: '50%'}, { duration: 2, queue: false });
                 good.animate({opacity: '0'}, { queue: false });
                 bad.animate({opacity: '1'}, { queue: false });
-                bCurt.animate({opacity: '0'}, {duation:1000, queue: true});
-                gCurt.animate({opacity: '0'}, {duation:1000, queue: false});
 
                 goodState = false;
                 badState = !badState;
             }
+            setTimeout(function() {
+                gCurt.remove();
+                bCurt.remove();
+            }, 0);
         }
 
         if (emoji.hasClass('happy') && !goodState) {
