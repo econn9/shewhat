@@ -42,6 +42,8 @@ sup {
 .slide a {
     margin-left: 50%;
     font-size: 2.5rem;
+    position: relative;
+    z-index: 1;
 }
 
 .slide a:hover {
@@ -74,7 +76,7 @@ sup {
     display: inline-block;
     color: #333333;
     font-size:3rem;
-    width: 11%;
+    width: 9%;
     padding-top: 18px;
     height:inherit;
 }

@@ -12,8 +12,8 @@
                     $('#good').append('<li>' + event.good + '</li>');
                     $('#bad').append('<li>' + event.bad + '</li>');
                     // $('#bad').append('<li>' + event.badLink + '</li>');
-                    $('#good').append('<a target="_blank" href="' + event.goodLink + '" >Full Story >></a>');
-                    $('#bad').append('<a target="_blank" href="' + event.badLink + '" >Full Story >></a>');
+                    $('#good').append('<a id="goodurl" target="_blank" href="' + event.goodLink + '" >Full Story >></a>');
+                    $('#bad').append('<a id="badurl" target="_blank" href="' + event.badLink + '" >Full Story >></a>');
 
                 })
             }
